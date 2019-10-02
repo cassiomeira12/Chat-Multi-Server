@@ -1,0 +1,47 @@
+
+.painel {
+    -fx-effect: dropshadow(two-pass-box, rgba(0, 0, 0, 0.45), 4, 0, 2, 3);
+}
+
+.label-Titulo {
+    -fx-font-size: 16px;
+    -fx-font-family: "System Bold"
+}
+
+.label-Mensagem {
+    -fx-font-size: 14px;
+    -fx-text-fill: #636e72;
+}
+
+.button {
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-pref-width: 100;
+    -fx-pref-height: 35;
+    -fx-background-color: #576574;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+}
+
+.button-sim {
+    -fx-background-color: #1abc9c;
+}
+
+.button-sim:hover {
+    -fx-background-color: #16a085;
+}
+
+.button-nao {
+    -fx-background-color: #95a5a6;
+}
+
+.button-nao:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+.button-sim:focused,
+.button-nao:focused {
+    -fx-border-width: 3;
+    -fx-border-radius: 7;
+    -fx-border-color: #ffff;
+}

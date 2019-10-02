@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER_RIGHT" fillHeight="false" maxWidth="1.7976931348623157E308" type="HBox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="boxMensagem" maxHeight="1.7976931348623157E308" maxWidth="500.0" style="-fx-background-color: #dcdde1;">
+         <children>
+            <Label fx:id="remetenteLabel" text="192.168.0.1" textFill="#616161" />
+            <HBox fx:id="boxConteudo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="mensagemLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Mensagem" wrapText="true" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label fx:id="horaLabel" text="10:15" textFill="#616161">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</fx:root>

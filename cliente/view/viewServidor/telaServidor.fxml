@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="51.0" layoutY="29.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/computador.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="conexaoImageView" fitWidth="60.0" onMouseClicked="#onClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/conectar.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="conexaoLabel" text="Ligar Servidor" textFill="#909090" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="242.0" layoutY="29.0" prefWidth="300.0" spacing="5.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Computador:" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="computadorLabel" text="hostname">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Endereço IP:" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ipLabel" text="0.0.0.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="31.0" spacing="10.0">
+               <children>
+                  <Label text="Sistema Operacional:" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sistemaOperacionalLabel" text="SO">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="31.0" spacing="10.0">
+               <children>
+                  <Label text="Arquitetura do Sistema:" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arquiteturaLabel" text="amd64">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Porta do Servidor TCP" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="portaServerTCPTextField" alignment="CENTER" prefWidth="100.0" promptText="Porta" text="1604" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="106.0" spacing="10.0">
+               <children>
+                  <Label text="Porta do Servidor UDP" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="portaServerUDPTextField" alignment="CENTER" prefWidth="100.0" promptText="Porta" text="1605" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="168.0" spacing="10.0">
+               <children>
+                  <Label text="Porta dos Clientes UDP" textFill="#909090">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="portaClientesUDPTextField" alignment="CENTER" prefWidth="100.0" promptText="Porta" text="1606" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="307.0" layoutY="292.0" text="Hora do Servidor" textFill="#909090">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="horaSistemaLabel" layoutX="250.0" layoutY="311.0" text="dd/MM/yyyy - hh:mm:ss">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="345.0" text="O Servidor envia a hora do sistema quando um cliente e conectado" textFill="#909090">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusServidorLabel" layoutX="24.0" layoutY="271.0" text="Servidor Desconectado" textFill="#c61e1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

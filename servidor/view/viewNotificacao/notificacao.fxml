@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="90.0" prefWidth="470.0" style="-fx-background-color: transparent;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="cleanPane" layoutX="4.0" layoutY="2.0" prefHeight="85.0" prefWidth="461.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 10;">
+          <children>
+            <AnchorPane fx:id="dark1Pane" prefHeight="85.0" prefWidth="67.0" style="-fx-background-color: #27ae60; -fx-background-radius: 10;" />
+            <AnchorPane fx:id="dark2Pane" layoutX="54.0" prefHeight="85.0" prefWidth="20.0" style="-fx-background-color: #27ae60;" />
+              <ImageView fx:id="iconImageView" fitHeight="67.0" fitWidth="67.0" layoutX="4.0" layoutY="10.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../../mnt/HD-Backup/Cassio-Meira/Desenvolvimento-Software/Projetos/Modelo%20Projeto/src/view/viewNotificacao/success.png" />
+               </image>
+            </ImageView>
+              <Label fx:id="tituloLabel" layoutX="100.0" layoutY="10.0" prefWidth="310.0" text="Titulo" textFill="WHITE" wrapText="true">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Label>
+              <Label fx:id="mensagemLabel" alignment="TOP_LEFT" layoutX="100.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="320.0" text="Mensagem" textFill="WHITE" wrapText="true">
+                  <font>
+                      <Font size="13.0" />
+                  </font>
+              </Label>
+              <Label fx:id="fecharLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="437.0" layoutY="-2.0" prefHeight="20.0" prefWidth="20.0" text="x" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="20.0" />
+                  </font>
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+              </Label>
+          </children>
+      </AnchorPane>
+   </children>
+</fx:root>
